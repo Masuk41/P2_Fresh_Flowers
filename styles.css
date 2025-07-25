@@ -256,6 +256,9 @@ img {
   background-size: cover;
   border-radius: 10px;
 }
+.deal-button {
+  color: white;
+}
 .overlay {
   position: absolute;
   top: 0;
