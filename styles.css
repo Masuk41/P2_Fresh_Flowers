@@ -83,7 +83,31 @@ img {
   color: var(--primary);
 }
 
-.cart a {
+.cart-container {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: #333;
+}
+
+.cart-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
 }
 
 .mobile-menu-btn {
