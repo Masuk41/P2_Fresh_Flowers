@@ -177,3 +177,151 @@ img {
   background-color: #c1121f;
 }
 /* Latest Deals */
+.latest-deals-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.deals-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.deals-heading {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.deals-description {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .latest-deals-section {
+    padding: 40px 0;
+  }
+
+  .deals-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Deal Cards - Standalone Styles */
+.deal-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.deal-card1 {
+  background-image: url("assets/deal-bloom.png");
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+}
+.deal-card2 {
+  position: relative;
+  background-image: url("assets/deal-ana.png");
+  background-size: cover;
+  border-radius: 10px;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.deal-card3 {
+  grid-template-columns: 3fr 1fr;
+  position: relative;
+  background-image: url("assets/deal-zabo.png");
+  background-size: cover;
+  border-radius: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.deal-card {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+/* Newsletter section */
+.newsletter {
+  padding: 4rem 0;
+  background-image: url("assets/news-letter-bg.png");
+  color: var(--white);
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+}
+
+.subscribe-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--dark);
+  color: var(--white);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #14213d;
+}
+
+/* Footer */
