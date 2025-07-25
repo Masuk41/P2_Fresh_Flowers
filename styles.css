@@ -411,7 +411,7 @@ img {
 }
 .flower-lovers {
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
 }
 .flower-lovers-text ul {
   padding: 20px;
@@ -420,6 +420,16 @@ img {
   margin-bottom: 10px;
 }
 
+.badge {
+  position: relative;
+}
+.badge-image {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+}
 .followus ul {
   list-style: none;
   padding-left: 0;
@@ -446,6 +456,9 @@ img {
 @media (max-width: 768px) {
   .flower-lovers {
     flex-direction: column;
+  }
+  .badge-image {
+    display: none;
   }
   .deal-cards-container {
     display: grid;
